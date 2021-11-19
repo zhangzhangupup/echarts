@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    margin-left: 40px;
+    list-style: none;
+}
+
+.tab {
+    width: 900px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.tab_list {
+    height: 40px;
+    background-color: #F3F0F1;
+}
+
+.tab_list li {
+    float: left;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.tab_list li:hover {
+    cursor: pointer;
+}
+
+.gb {
+    background-color: #D72820;
+    color: #fff;
+}
+
+.itme {
+    margin-top: 10px;
+    display: none;
+    width: 900px;
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 400px;
+}

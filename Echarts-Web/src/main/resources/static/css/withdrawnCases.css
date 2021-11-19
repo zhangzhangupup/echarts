@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.withdrawnCasestab {
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.withdrawnCasestab_list {
+    height: 40px;
+    background-color: #F3F0F1;
+}
+
+.withdrawnCasestab_list li {
+    float: left;
+    padding: 10px 2px;
+    font-size: 13px;
+}
+
+.withdrawnCasestab_list li:hover {
+    cursor: pointer;
+}
+
+.withdrawnCasesgb {
+    background-color: #D72820;
+    color: #fff;
+}
+
+.withdrawnCasesitme {
+    margin-top: 10px;
+    display: none;
+    width: 600px;
+    /*width: 100%;*/
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 400px;
+}
+

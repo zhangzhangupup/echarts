@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Echarts</title>
+    <link rel="stylesheet" href="../css/Echarts.css">
+    <link rel="stylesheet" href="../css/Middle.css">
+    <link rel="stylesheet" href="../css/TotalCases.css">
+    <link rel="stylesheet" href="../css/AddedAcceptances.css">
+    <link rel="stylesheet" href="../css/withdrawnCases.css">
+    <link rel="stylesheet" href="../css/ProblemCases.css">
+    <script src="../js/toolkit/echarts.min.js"></script>
+    <script src="../js/toolkit/jquery-3.6.0.js"></script>
+    <script src="../js/type/totaltype/totalajax.js"></script>
+    <script src="../js/type/totaltype/totalserice.js"></script>
+    <script src="../js/type/stocktype/stockajax.js"></script>
+    <script src="../js/type/stocktype/stockserice.js"></script>
+    <script src="../js/type/returnstype/returnsserice.js"></script>
+    <script src="../js/type/returnstype/ruturnsajax.js"></script>
+    <script src="../js/type/newaddaccepttype/newaddacceptajax.js"></script>
+    <script src="../js/type/newaddaccepttype/newaddacceptserice.js"></script>
+    <script src="../js/type/newaddcasewithdrawn/newaddacceptserice.js"></script>
+    <script src="../js/type/newaddcasewithdrawn/newaddcasewithdrawnajax.js"></script>
+    <script src="../js/type/ProblemCasesitems/ProblemCasesitemsajax.js"></script>
+    <script src="../js/type/ProblemCasesitems/ProblemCasesitemsserice.js"></script>
+    <script src="../js/public/function.js"></script>
+</head>
+<body>
+<div id="Above">
+    <div id="TotalCases" class="above">
+        <div class="tab">
+            <div class="tab_list">
+                <ul id="TotalCasesul">
+                    <li class="gb">第一天</li>
+                    <li>第二天</li>
+                    <li>第三天</li>
+                    <li>第四天</li>
+                    <li>第五天</li>
+                    <li>第六天</li>
+                    <li>第七天</li>
+                </ul>
+            </div>
+            <div class="tab-con">
+                <div class="itme" style="display: block" id="itm1">今天没有数据</div>
+                <div class="itme" id="itm2">今天没有数据</div>
+                <div class="itme" id="itm3">今天没有数据</div>
+                <div class="itme" id="itm4">今天没有数据</div>
+                <div class="itme" id="itm5">今天没有数据</div>
+                <div class="itme" id="itm6">今天没有数据</div>
+                <div class="itme" id="itm7">今天没有数据</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        tab('.tab_list', '.itme', 'gb');
+    </script>
+    <div id="StockCases" class="above"></div>
+</div>
+<div id="Middle">
+    <div class="middletab">
+        <div class="middletab_list">
+            <ul id="middleul">
+                <li class="middlegb">第一天</li>
+                <li>第二天</li>
+                <li>第三天</li>
+                <li>第四天</li>
+                <li>第五天</li>
+                <li>第六天</li>
+                <li>第七天</li>
+            </ul>
+        </div>
+        <div class="middletab-con">
+            <div class="middleitme" style="display: block" id="middleitm1">今天没有数据</div>
+            <div class="middleitme" id="middleitm2">今天没有数据</div>
+            <div class="middleitme" id="middleitm3">今天没有数据</div>
+            <div class="middleitme" id="middleitm4">今天没有数据</div>
+            <div class="middleitme" id="middleitm5">今天没有数据</div>
+            <div class="middleitme" id="middleitm6">今天没有数据</div>
+            <div class="middleitme" id="middleitm7">今天没有数据</div>
+        </div>
+    </div>
+    <script>
+        tab('.middletab_list', '.middleitme', 'middlegb');
+    </script>
+</div>
+<div id="Below">
+    <div id="AddedAcceptances" class="below">
+        <div class="AddedAcceptancestab">
+            <div class="AddedAcceptancestab_list">
+                <ul id="AddedAcceptancesul">
+                    <li class="AddedAcceptancesgb">第一天</li>
+                    <li>第二天</li>
+                    <li>第三天</li>
+                    <li>第四天</li>
+                    <li>第五天</li>
+                    <li>第六天</li>
+                    <li>第七天</li>
+                </ul>
+            </div>
+            <div class="AddedAcceptancestab-con">
+                <div class="AddedAcceptancesitme" style="display: block" id="AddedAcceptancesitm1">今天没有数据</div>
+                <div class="AddedAcceptancesitme" id="AddedAcceptancesitm2">今天没有数据</div>
+                <div class="AddedAcceptancesitme" id="AddedAcceptancesitm3">今天没有数据</div>
+                <div class="AddedAcceptancesitme" id="AddedAcceptancesitm4">今天没有数据</div>
+                <div class="AddedAcceptancesitme" id="AddedAcceptancesitm5">今天没有数据</div>
+                <div class="AddedAcceptancesitme" id="AddedAcceptancesitm6">今天没有数据</div>
+                <div class="AddedAcceptancesitme" id="AddedAcceptancesitm7">今天没有数据</div>
+            </div>
+        </div>
+        <script>
+            tab('.AddedAcceptancestab_list', '.AddedAcceptancesitme', 'AddedAcceptancesgb');
+        </script>
+    </div>
+    <div id="withdrawnCases" class="below">
+        <div class="withdrawnCasestab">
+            <div class="withdrawnCasestab_list">
+                <ul id="withdrawnCasesul">
+                    <li class="withdrawnCasesgb">第一天</li>
+                    <li>第二天</li>
+                    <li>第三天</li>
+                    <li>第四天</li>
+                    <li>第五天</li>
+                    <li>第六天</li>
+                    <li>第七天</li>
+                </ul>
+            </div>
+            <div class="withdrawnCasestab-con">
+                <div class="withdrawnCasesitme" style="display: block" id="withdrawnCasesitm1">今天没有数据</div>
+                <div class="withdrawnCasesitme" id="withdrawnCasesitm2">今天没有数据</div>
+                <div class="withdrawnCasesitme" id="withdrawnCasesitm3">今天没有数据</div>
+                <div class="withdrawnCasesitme" id="withdrawnCasesitm4">今天没有数据</div>
+                <div class="withdrawnCasesitme" id="withdrawnCasesitm5">今天没有数据</div>
+                <div class="withdrawnCasesitme" id="withdrawnCasesitm6">今天没有数据</div>
+                <div class="withdrawnCasesitme" id="withdrawnCasesitm7">今天没有数据</div>
+            </div>
+        </div>
+        <script>
+            tab('.withdrawnCasestab_list', '.withdrawnCasesitme', 'withdrawnCasesgb');
+        </script>
+    </div>
+    <div id="ProblemCases" class="below">
+        <div class="ProblemCasestab">
+            <div class="ProblemCasestab_list">
+                <ul id="ProblemCasesul">
+                    <li class="ProblemCasesgb">第一天</li>
+                    <li>第二天</li>
+                    <li>第三天</li>
+                    <li>第四天</li>
+                    <li>第五天</li>
+                    <li>第六天</li>
+                    <li>第七天</li>
+                </ul>
+            </div>
+            <div class="ProblemCasestab-con">
+                <div class="ProblemCasesitme" style="display: block" id="ProblemCasesitm1">今天没有数据</div>
+                <div class="ProblemCasesitme" id="ProblemCasesitm2">今天没有数据</div>
+                <div class="ProblemCasesitme" id="ProblemCasesitm3">今天没有数据</div>
+                <div class="ProblemCasesitme" id="ProblemCasesitm4">今天没有数据</div>
+                <div class="ProblemCasesitme" id="ProblemCasesitm5">今天没有数据</div>
+                <div class="ProblemCasesitme" id="ProblemCasesitm6">今天没有数据</div>
+                <div class="ProblemCasesitme" id="ProblemCasesitm7">今天没有数据</div>
+            </div>
+        </div>
+        <script>
+            tab('.ProblemCasestab_list', '.ProblemCasesitme', 'ProblemCasesgb');
+        </script>
+    </div>
+</div>
+<script>
+    stockajax('StockCases', 'http://localhost:8081/numberOfCasesInStock/SelectWeekNumberOfCasesInStockDao', '存量案件数');
+    MethodCall(ajaxEcharts,'itm',"http://localhost:8081/TotalNumberOfCases/Select","DayTotalNumberOfCases",'总案件数量');
+    MethodCall(ReturnAjaxEcharts,'middleitm',"http://localhost:8081/NumberOfReturn/Select","DayNumberOfReturn",'回传数量');
+    MethodCall(NewAddAjaxEcharts,'AddedAcceptancesitm',"http://localhost:8081/NumberOfNewlyAddedAcceptances/Select","DayNumberOfNewlyAddedAcceptances",'新增受理数');
+    MethodCall(NewAddcasewithAjaxEcharts,'withdrawnCasesitm',"http://localhost:8081/NumberOfNewCasesWithDrawn/Select","DayNumberOfNewCasesWithDrawn",'新增撤案数');
+    MethodCall(ProblemCasesitemsEchartsajax,'ProblemCasesitm',"http://localhost:8081/NumberOfProblemPieces/Select","DayNumberOfProblemPieces",'问题件数量');
+</script>
+</body>
+</html>

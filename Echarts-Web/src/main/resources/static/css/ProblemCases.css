@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.ProblemCasestab {
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.ProblemCasestab_list {
+    height: 40px;
+    background-color: #F3F0F1;
+}
+
+.ProblemCasestab_list li {
+    float: left;
+    padding: 10px 2px;
+    font-size: 13px;
+}
+
+.ProblemCasestab_list li:hover {
+    cursor: pointer;
+}
+
+.ProblemCasesgb {
+    background-color: #D72820;
+    color: #fff;
+}
+
+.ProblemCasesitme {
+    margin-top: 10px;
+    display: none;
+    width: 600px;
+    /*width: 100%;*/
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 400px;
+}
+

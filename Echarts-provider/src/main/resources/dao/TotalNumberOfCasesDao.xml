@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zhang.dao.TotalNumberOfCasesDao">
+    <sql id="TotalNumberOfCasesNumberOfCasesField">
+        date, project, totalcases, inventory, ysjunderreview, baojiprocessing
+    </sql>
+    <select id="SelectSevenDayTotalNumberOfCases" resultType="com.zhang.pojo.TotalNumberOfCases">
+        select <include refid="TotalNumberOfCasesNumberOfCasesField"></include>
+        from totalnumberofcases
+        where date =(select distinct date from totalnumberofcases order by date desc limit 0, 1)
+
+    </select>
+    <select id="SelectSixDayTotalNumberOfCases" resultType="com.zhang.pojo.TotalNumberOfCases">
+        select date, project, totalcases, inventory, ysjunderreview, baojiprocessing
+        from totalnumberofcases
+        where date =(select distinct date from totalnumberofcases order by date desc limit 1, 1)
+
+    </select>
+    <select id="SelectFiveDayTotalNumberOfCases" resultType="com.zhang.pojo.TotalNumberOfCases">
+        select date, project, totalcases, inventory, ysjunderreview, baojiprocessing
+        from totalnumberofcases
+        where date =(select distinct date from totalnumberofcases order by date desc limit 2, 1)
+
+    </select>
+    <select id="SelectFourDayTotalNumberOfCases" resultType="com.zhang.pojo.TotalNumberOfCases">
+        select date, project, totalcases, inventory, ysjunderreview, baojiprocessing
+        from totalnumberofcases
+        where date =(select distinct date from totalnumberofcases order by date desc limit 3, 1)
+
+    </select>
+    <select id="SelectThreeDayTotalNumberOfCases" resultType="com.zhang.pojo.TotalNumberOfCases">
+        select date, project, totalcases, inventory, ysjunderreview, baojiprocessing
+        from totalnumberofcases
+        where date =(select distinct date from totalnumberofcases order by date desc limit 4, 1)
+
+    </select>
+    <select id="SelectTwoDayTotalNumberOfCases" resultType="com.zhang.pojo.TotalNumberOfCases">
+        select date, project, totalcases, inventory, ysjunderreview, baojiprocessing
+        from totalnumberofcases
+        where date =(select distinct date from totalnumberofcases order by date desc limit 5, 1)
+
+    </select>
+    <select id="SelectOneDayTotalNumberOfCases" resultType="com.zhang.pojo.TotalNumberOfCases">
+        select <include refid="TotalNumberOfCasesNumberOfCasesField"></include>
+        from totalnumberofcases
+        where date =(select distinct date from totalnumberofcases order by date desc limit 6, 1)
+
+    </select>
+</mapper>

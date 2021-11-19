@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Echarts.iml" filepath="$PROJECT_DIR$/Echarts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Echarts-Api/Echarts-Api.iml" filepath="$PROJECT_DIR$/Echarts-Api/Echarts-Api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Echarts-Web/Echarts-Web.iml" filepath="$PROJECT_DIR$/Echarts-Web/Echarts-Web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Echarts-provider/Echarts-provider.iml" filepath="$PROJECT_DIR$/Echarts-provider/Echarts-provider.iml" />
+    </modules>
+  </component>
+</project>

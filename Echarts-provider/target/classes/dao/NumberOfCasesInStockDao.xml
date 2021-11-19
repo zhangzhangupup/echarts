@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zhang.dao.NumberOfCasesInStockDao">
+    <select id="SelectWeekNumberOfCasesInStock" resultType="com.zhang.pojo.NumberOfCasesInStock">
+        select date, accept, standardization, deduction, review, problempiece, returns
+        from (select date, accept, standardization, deduction, review, problempiece, returns
+            from numberofcasesinstock order by date desc limit 0, 7) as temporarynumberofcasesinstock
+        order by date
+    </select>
+
+</mapper>
