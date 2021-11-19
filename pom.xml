@@ -69,11 +69,13 @@
                 <version>${junit.version}</version>
                 <scope>test</scope>
             </dependency>
+            <!--日志文件-->
             <dependency>
                 <groupId>log4j</groupId>
                 <artifactId>log4j</artifactId>
                 <version>${log4j.version}</version>
             </dependency>
+            <!--lombok插件(简化实体类)-->
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
