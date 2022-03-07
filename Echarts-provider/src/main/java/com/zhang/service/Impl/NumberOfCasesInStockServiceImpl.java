@@ -7,6 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
+/**
+ * 测试创建新的分支
+ */
 @Service
 public class NumberOfCasesInStockServiceImpl implements NumberOfCasesInStockService {
     @Autowired
