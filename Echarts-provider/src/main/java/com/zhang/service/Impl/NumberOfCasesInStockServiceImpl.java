@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 @Service
 public class NumberOfCasesInStockServiceImpl implements NumberOfCasesInStockService {
+    //自动注入
     @Autowired
     private NumberOfCasesInStockDao numberOfCasesInStockDao;
     @Override
