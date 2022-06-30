@@ -16,6 +16,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class NumberOfCasesInStockController {
     @Autowired
     private NumberOfCasesInStockService numberOfCasesInStockService;
+
+    /**
+     * test环境
+     * @return
+     */
     @GetMapping("/SelectWeekNumberOfCasesInStockDao")
     public Result SelectWeekNumberOfCasesInStockDao(){
         return new Result(true, StatusCode.OK,"查询成功",numberOfCasesInStockService.SelectWeekNumberOfCasesInStock());
