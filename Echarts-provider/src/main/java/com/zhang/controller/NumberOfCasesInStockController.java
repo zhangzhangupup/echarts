@@ -18,7 +18,7 @@ public class NumberOfCasesInStockController {
     private NumberOfCasesInStockService numberOfCasesInStockService;
 
     /**
-     * master环境
+     * master环境 gengxin
      * @return
      */
     @GetMapping("/SelectWeekNumberOfCasesInStockDao")
