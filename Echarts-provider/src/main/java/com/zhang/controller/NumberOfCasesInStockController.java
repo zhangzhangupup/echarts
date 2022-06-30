@@ -18,7 +18,7 @@ public class NumberOfCasesInStockController {
     private NumberOfCasesInStockService numberOfCasesInStockService;
 
     /**
-     * test环境
+     * master环境
      * @return
      */
     @GetMapping("/SelectWeekNumberOfCasesInStockDao")
